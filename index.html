@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GutscheinLog</title>
+  <link rel="canonical" href="https://digi951.github.io/voucherlog-site/">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eaf0fb;
+      --card: #f8fafd;
+      --text: #131c2e;
+      --muted: #5c6c85;
+      --accent: #2f5fd6;
+      --accent-strong: #1f3f9e;
+      --border: #dbe4f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #e0e9fb 0, transparent 26rem),
+        radial-gradient(circle at bottom right, #eaf3ef 0, transparent 24rem),
+        linear-gradient(180deg, #f2f6fc 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .hero,
+    .card {
+      background: rgba(248, 250, 253, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(19, 28, 46, 0.08);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--accent-strong);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #f8fafd;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--accent-strong);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .url-list {
+      margin-top: 18px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .url-list li + li {
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">GutscheinLog · VoucherLog</p>
+      <h1>GutscheinLog App-Informationen</h1>
+      <p>
+        GutscheinLog ist eine App zum Verwalten von Gutscheinen, Geschenkkarten und
+        Guthaben: Beträge, Ablaufdaten, Barcodes und Fotos an einem Ort.
+      </p>
+      <p class="muted">
+        Auf dieser Seite findest du die wichtigsten Links für Support und Datenschutz.
+      </p>
+      <ul class="url-list">
+        <li>Startseite: <a href="https://digi951.github.io/voucherlog-site/">https://digi951.github.io/voucherlog-site/</a></li>
+        <li>Support: <a href="https://digi951.github.io/voucherlog-site/support/">https://digi951.github.io/voucherlog-site/support/</a></li>
+        <li>Datenschutz: <a href="https://digi951.github.io/voucherlog-site/privacy/">https://digi951.github.io/voucherlog-site/privacy/</a></li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Support</h2>
+        <p>
+          Hilfe bei Fragen, Feedback, Fehlerberichten und Themen rund um die App.
+        </p>
+        <p>
+          <a class="button" href="./support/">Support ansehen</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Datenschutz</h2>
+        <p>
+          Informationen dazu, welche Daten GutscheinLog verarbeitet und wie damit umgegangen wird.
+        </p>
+        <p>
+          <a class="button" href="./privacy/">Datenschutzerklärung lesen</a>
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      Kontakt: <a href="mailto:gibbons.22.puls@icloud.com">gibbons.22.puls@icloud.com</a><br>
+      Last updated: September 27, 2026
+    </footer>
+  </main>
+</body>
+</html>
